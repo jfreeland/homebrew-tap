@@ -11,7 +11,7 @@ class Mpdq < Formula
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/jfreeland/mpdq/releases/download/v0.1.0/mpdq_0.1.0_linux_arm64.tar.gz"
-    sha256 "1d4cc8069193db404e28000639d579fd3a2b3fa79a935800fb3d8b99f5eed3f1"
+    sha256 "b80607c7f4b7f1d9d579f5a95c794f08ba64fcbd7983286589098e353efb0d06"
   end
 
   def install
