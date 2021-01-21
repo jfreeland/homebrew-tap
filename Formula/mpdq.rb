@@ -7,11 +7,14 @@ class Mpdq < Formula
   homepage "https://github.com/jfreeland/mpdq"
   version "0.1.0"
   bottle :unneeded
-  depends_on :linux
 
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/jfreeland/mpdq/releases/download/v0.1.0/mpdq_0.1.0_linux_arm64.tar.gz"
-    sha256 "b80607c7f4b7f1d9d579f5a95c794f08ba64fcbd7983286589098e353efb0d06"
+  if OS.mac?
+    url "https://github.com/jfreeland/mpdq/releases/download/v0.1.0/mpdq_0.1.0_darwin_amd64.tar.gz"
+    sha256 "1922418ac7e4d9cbc3a08b1d4dbfcecf6e7a00b42b917ddb36d4aca1b2ffef3d"
+  end
+  if OS.linux? && Hardware::CPU.intel?
+    url "https://github.com/jfreeland/mpdq/releases/download/v0.1.0/mpdq_0.1.0_linux_amd64.tar.gz"
+    sha256 "6c8c17a462c987f681debf9cb1263cd468c6941e867f9052a5af29382995cfb4"
   end
 
   def install
