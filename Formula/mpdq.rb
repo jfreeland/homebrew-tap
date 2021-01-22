@@ -5,16 +5,16 @@
 class Mpdq < Formula
   desc "A cli tool to parse MPEG-DASH manifests"
   homepage "https://github.com/jfreeland/mpdq"
-  version "0.1.0"
+  version "0.1.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/jfreeland/mpdq/releases/download/v0.1.0/mpdq_0.1.0_darwin_amd64.tar.gz"
-    sha256 "1922418ac7e4d9cbc3a08b1d4dbfcecf6e7a00b42b917ddb36d4aca1b2ffef3d"
+    url "https://github.com/jfreeland/mpdq/releases/download/v0.1.1/mpdq_0.1.1_darwin_amd64.tar.gz"
+    sha256 "4b30588b6fdd3051a82c1006cda8e2c3ac7510af50516e25142d21960dfb0ac2"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/jfreeland/mpdq/releases/download/v0.1.0/mpdq_0.1.0_linux_amd64.tar.gz"
-    sha256 "6c8c17a462c987f681debf9cb1263cd468c6941e867f9052a5af29382995cfb4"
+    url "https://github.com/jfreeland/mpdq/releases/download/v0.1.1/mpdq_0.1.1_linux_amd64.tar.gz"
+    sha256 "97ee25a1deb2a8bbad6dd5fe8864b2f3e94823fd529c33b5e99c0164641be3d0"
   end
 
   def install
